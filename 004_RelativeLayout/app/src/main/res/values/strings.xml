@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">004_RelativeLayout</string>
+    <string name="text_view_username">ID</string>
+    <string name="text_view_password">Pass</string>
+    <string name="button_login_text">Login</string>
+    <string name="button_clear_text">Clear</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
 </resources>
