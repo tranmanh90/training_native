@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.training.relativelayout.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/layout_username"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_view_username"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="@dimen/edit_text_layout_width"
+            android:layout_height="@dimen/edit_text_layout_height"
+            android:hint="@string/username_hint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_username"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_view_password"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="@dimen/edit_text_layout_width"
+            android:layout_height="@dimen/edit_text_layout_height"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_password"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="@dimen/button_layout_width"
+            android:layout_height="@dimen/button_layout_height"
+            android:text="@string/button_login_text" />
+
+        <Button
+            android:layout_width="@dimen/button_layout_width"
+            android:layout_height="@dimen/button_layout_height"
+            android:text="@string/button_clear_text" />
+    </LinearLayout>
+
+
+</RelativeLayout>
