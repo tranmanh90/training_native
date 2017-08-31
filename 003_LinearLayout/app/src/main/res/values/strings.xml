@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">003_LinearLayout</string>
+    <string name="button_text_1">BUTTON 1</string>
+    <string name="button_text_2">BUTTON 2</string>
+    <string name="text_view_1">Text view 1</string>
+    <string name="text_view_2">Text view 2</string>
+    <string name="edit_text_1">Edit text 1</string>
+    <string name="edit_text_2">Edit text 2</string>
 </resources>
