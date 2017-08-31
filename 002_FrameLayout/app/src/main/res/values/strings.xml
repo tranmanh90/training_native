@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">002_FrameLayout</string>
+    <string name="text_view">This is frame layout</string>
 </resources>
