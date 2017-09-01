@@ -1,5 +1,6 @@
 package com.training.gridview;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -20,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(MainActivity.this, "" + position, Toast.LENGTH_LONG).show();
+
+                /** Send intent to SingleViewActivity */
+                Intent i = new Intent(getApplicationContext(), SingleViewActivity.class);
+
+                /** Pass image index */
+                i.putExtra("id", position);
+                startActivity(i);
             }
         });
     }
