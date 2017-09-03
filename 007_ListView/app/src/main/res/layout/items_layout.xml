@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_flag"
+        android:layout_width="@dimen/image_layout_width"
+        android:layout_height="@dimen/image_layout_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/image_layout_margin_right"
+        android:layout_marginStart="@dimen/image_layout_margin_left"
+        android:layout_marginTop="@dimen/image_layout_margin_top" />
+
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tv_country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_flag"
+        android:layout_marginTop="@dimen/country_name_layout_margin_top"
+        android:layout_toEndOf="@id/img_flag"
+        android:text="@string/country_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tv_country_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_flag"
+        android:layout_alignStart="@id/tv_country_name"
+        android:layout_below="@id/tv_country_name"
+        android:layout_marginBottom="@dimen/country_area_layout_margin_bottom"
+        android:gravity="bottom"
+        android:text="@string/country_area"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
