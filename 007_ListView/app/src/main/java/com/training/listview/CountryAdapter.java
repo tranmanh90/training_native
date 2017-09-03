@@ -19,7 +19,7 @@ public class CountryAdapter extends BaseAdapter {
     private String mCountryName[];
     private int mFlag[];
     private Context mContext;
-    LayoutInflater mLayoutInflater;
+    private LayoutInflater mLayoutInflater;
 
     public CountryAdapter(Context applicationContext, int[] flag, String[] countryName) {
         this.mContext = applicationContext;
@@ -45,12 +45,23 @@ public class CountryAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView = mLayoutInflater.inflate(R.layout.items_layout, null);
-        TextView country = (TextView) convertView.findViewById(R.id.tv_country_name);
-        ImageView flag = (ImageView) convertView.findViewById(R.id.img_flag);
-        country.setText(mCountryName[position]);
-        Glide.with(mContext).load(mFlag[position]).into(flag);
-//        flag.setImageResource(mFlag[position]);
+        ViewHolder holder;
+        if (convertView == null) {
+            convertView = mLayoutInflater.inflate(R.layout.items_layout, null);
+            holder = new ViewHolder();
+            holder.country = (TextView) convertView.findViewById(R.id.tv_country_name);
+            holder.flag = (ImageView) convertView.findViewById(R.id.img_flag);
+            convertView.setTag(holder);
+        } else {
+            holder = (ViewHolder) convertView.getTag();
+        }
+        holder.country.setText(mCountryName[position]);
+        Glide.with(mContext).load(mFlag[position]).into(holder.flag);
         return convertView;
+    }
+
+    private static class ViewHolder {
+        ImageView flag;
+        TextView country;
     }
 }
