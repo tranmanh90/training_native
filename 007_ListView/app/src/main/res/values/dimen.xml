@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_layout_width">90dp</dimen>
+    <dimen name="image_layout_height">60dp</dimen>
+    <dimen name="image_layout_margin_left">5dp</dimen>
+    <dimen name="image_layout_margin_right">5dp</dimen>
+    <dimen name="image_layout_margin_top">5dp</dimen>
+    <dimen name="country_name_layout_margin_top">5dp</dimen>
+    <dimen name="country_area_layout_margin_bottom">5dp</dimen>
+</resources>
