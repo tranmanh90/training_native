@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_layout_width">90dp</dimen>
+    <dimen name="image_layout_height">60dp</dimen>
+    <dimen name="image_layout_margin_end">5dp</dimen>
+    <dimen name="text_size_country_name">20sp</dimen>
+    <dimen name="text_size_country_area">16sp</dimen>
+</resources>
