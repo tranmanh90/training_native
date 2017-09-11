@@ -1,3 +1,4 @@
+<h1>1. Starting other Android components via intents</h1>
 <strong>1.1. What is intents?</strong>
 - Intent là bản tin không đồng bộ, cho phép các thành phần ứng dụng yêu cầu chức năng từ các thành phần android khác.
 - Intent cho phép tương tác giữa các thành phần trong 1 ứng dụng và với các thành phần của ứng dụng khác.
