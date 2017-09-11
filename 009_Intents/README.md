@@ -165,7 +165,7 @@ startActivity(i);
 
 <strong>3.1. Example: Register an activity as browser</strong>
 VD: Đăng ký một Activity cho một intent , nó được kích hoạt khi ai đó muốn mở webpage.
-
+![alt text](https://user-images.githubusercontent.com/31216001/30295235-162e4298-976a-11e7-8996-44e7c7985596.PNG)
 
 <strong>3.2. Example: Register an activity for the share intent</strong>
 VD: Đăng ký một activity cho intent ACTION_SEND, nó tự khai bảo chỉ phù hợp với text/plain
