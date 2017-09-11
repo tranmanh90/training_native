@@ -164,9 +164,10 @@ startActivity(i);
 - Nếu một thành phần mà không định nghĩa 
 
 <strong>3.1. Example: Register an activity as browser</strong>
-Vd: Đăng ký một Activity cho một intent , nó được kích hoạt khi ai đó muốn mở webpage.
+VD: Đăng ký một Activity cho một intent , nó được kích hoạt khi ai đó muốn mở webpage.
 <pre>
 <strong>
+
 <activity android:name=".BrowserActivitiy"
           android:label="@string/app_name">
   <intent-filter>
@@ -175,6 +176,7 @@ Vd: Đăng ký một Activity cho một intent , nó được kích hoạt khi a
      <data android:scheme="http"/>
   </intent-filter>
 </activity>
+
 </strong>
 </pre>
 
@@ -182,6 +184,7 @@ Vd: Đăng ký một Activity cho một intent , nó được kích hoạt khi a
 VD: Đăng ký một activity cho intent ACTION_SEND, nó tự khai bảo chỉ phù hợp với text/plain
 <pre>
 <strong>
+
 <activity
     android:name=".ActivityTest"
     android:label="@string/app_name" >
@@ -195,6 +198,7 @@ VD: Đăng ký một activity cho intent ACTION_SEND, nó tự khai bảo chỉ 
     </intent-filter>
 
 </activity>
+
 </strong>
 </pre>
 
