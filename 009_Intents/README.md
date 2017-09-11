@@ -35,6 +35,7 @@ Tạo một intent không tường minh yêu cầu hệ thống tìm và mở m�
 - Đôi lúc chúng ta muốn xác định xem một thành phần đã được đăng ký intent chưa.
 VD: Chúng ta muốn kiểm tra xem một intent receiver đã có chưa, nếu có rồi thì chúng ta cho phép chức năng trong ứng dụng của mình.
 <pre>
+<strong>
 public static boolean isIntentAvailable(Context ctx, Intent intent) {
     final PackageManager mgr = ctx.getPackageManager();
     List<ResolveInfo> list =
@@ -42,4 +43,5 @@ public static boolean isIntentAvailable(Context ctx, Intent intent) {
             PackageManager.MATCH_DEFAULT_ONLY);
     return list.size() > 0;
 }
+</strong>
 </pre>
