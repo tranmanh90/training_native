@@ -165,42 +165,10 @@ startActivity(i);
 
 <strong>3.1. Example: Register an activity as browser</strong>
 VD: Đăng ký một Activity cho một intent , nó được kích hoạt khi ai đó muốn mở webpage.
-<pre lang="xml">
-<strong>
 
-<activity android:name=".BrowserActivitiy"
-          android:label="@string/app_name">
-  <intent-filter>
-     <action android:name="android.intent.action.VIEW" />
-     <category android:name="android.intent.category.DEFAULT" />
-     <data android:scheme="http"/>
-  </intent-filter>
-</activity>
-
-</strong>
-</pre>
 
 <strong>3.2. Example: Register an activity for the share intent</strong>
 VD: Đăng ký một activity cho intent ACTION_SEND, nó tự khai bảo chỉ phù hợp với text/plain
-<pre data-lang="xml">
-<strong>
-
-<activity
-    android:name=".ActivityTest"
-    android:label="@string/app_name" >
-    <intent-filter>
-      <action android:name="android.intent.action.SEND" />
-
-      <category android:name="android.intent.category.DEFAULT" />
-
-      <data android:mimeType="text/plain" />
-
-    </intent-filter>
-
-</activity>
-
-</strong>
-</pre>
 
 
 
