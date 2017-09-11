@@ -169,6 +169,7 @@ VD: Đăng ký một Activity cho một intent , nó được kích hoạt khi a
 
 <strong>3.2. Example: Register an activity for the share intent</strong>
 VD: Đăng ký một activity cho intent ACTION_SEND, nó tự khai bảo chỉ phù hợp với text/plain
+![alt text](https://user-images.githubusercontent.com/31216001/30295323-64b72d44-976a-11e7-8510-529ae2b06957.PNG)
 
 
 
