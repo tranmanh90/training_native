@@ -155,7 +155,8 @@ Intent i = new Intent(Intent.ACTION_VIEW);
 i.setData(Uri.parse(url));
 startActivity(i);
 </strong>
-<pre>
+</pre>
+
 - Để hệ thông xác định thành phần có thể tương tác với intent, thì mỗi thành phần đó phải đăng ký một intent filter cho một hành động cụ thể và dữ liệu cụ thể.
 - Intent filter chỉ rõ kiểu loại intent mà một activity, service, broadcast receiver có thể đắp lại bằng cách khai báo các khả năng của một thành phần.
 - Có thể đăng ký intent filter tĩnh trong file AndroidManifest.xml và động trong code của một broadcast receiver.
