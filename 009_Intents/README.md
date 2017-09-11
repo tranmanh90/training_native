@@ -183,6 +183,7 @@ VD: Đăng ký một Activity cho một intent , nó được kích hoạt khi a
 <strong>3.2. Example: Register an activity for the share intent</strong>
 VD: Đăng ký một activity cho intent ACTION_SEND, nó tự khai bảo chỉ phù hợp với text/plain
 <pre lang="xml">
+{{
 <strong>
 
 <activity
@@ -200,6 +201,7 @@ VD: Đăng ký một activity cho intent ACTION_SEND, nó tự khai bảo chỉ 
 </activity>
 
 </strong>
+}}
 </pre>
 
 
