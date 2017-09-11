@@ -1,4 +1,5 @@
 <h1>1. Starting other Android components via intents</h1>
+
 <strong>1.1. What is intents?</strong>
 - Intent là bản tin không đồng bộ, cho phép các thành phần ứng dụng yêu cầu chức năng từ các thành phần android khác.
 - Intent cho phép tương tác giữa các thành phần trong 1 ứng dụng và với các thành phần của ứng dụng khác.
@@ -53,6 +54,7 @@ public static boolean isIntentAvailable(Context ctx, Intent intent) {
 - Ứng dụng của chúng ta có thể đăng ký các sự kiện của hệ thống.
 
 <h1>2. Data transfer between activities</h1>
+
 <strong>2.1. Data transfer to the target component</strong>
 - Một intent chứa header data mô tả action, type, ...
 - Một intent còn chứa additional data dựa trên một thể hiện của lớp Bundle, dữ liệu có thể lấy được thông qua phương thức <strong>getExtra()</strong>
