@@ -7,10 +7,11 @@
 - Để khởi chạy một Activity ta sử dụng phương thức startActivity(intent), phương thức này được định nghĩa trong đối tượng Context mà Activity kế thừa.
 ![alt text](http://www.vogella.com/tutorials/AndroidIntent/img/xstartactivityviaintent10.png.pagespeed.ic.XIxbBb_YEg.webp)
 
-Intent i = new Intent(this, ActivityTwo.class); <br/>
-startActivity(i);
+<strong>Intent i = new Intent(this, ActivityTwo.class); </strong>
+<br/>
+<strong>startActivity(i);</strong>
 
-- Để khởi chạy một service ta sử dụng hàm startService(Intent)
+- Để khởi chạy một service ta sử dụng hàm <strong>startService(Intent)</strong>
 
 1.3. Sending out explicit or implicit intents
 - Android hỗ trợ Intent tường minh và không tường minh.
