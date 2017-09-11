@@ -5,4 +5,9 @@
 
 1.2. Starting activities or services
 - Để khởi chạy một Activity ta sử dụng phương thức startActivity(intent), phương thức này được định nghĩa trong đối tượng Context mà Activity kế thừa.
-![alt text](http://www.vogella.com/tutorials/AndroidIntent/img/xstartactivityviaintent10.png.pagespeed.ic.XIxbBb_YEg.webp) 
+![alt text](http://www.vogella.com/tutorials/AndroidIntent/img/xstartactivityviaintent10.png.pagespeed.ic.XIxbBb_YEg.webp)
+# Start the activity connect to the
+# specified class
+
+Intent i = new Intent(this, ActivityTwo.class);
+startActivity(i);
