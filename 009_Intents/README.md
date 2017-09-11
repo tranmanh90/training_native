@@ -182,9 +182,9 @@ VD: Đăng ký một Activity cho một intent , nó được kích hoạt khi a
 
 <strong>3.2. Example: Register an activity for the share intent</strong>
 VD: Đăng ký một activity cho intent ACTION_SEND, nó tự khai bảo chỉ phù hợp với text/plain
-<pre lang="xml">
+<pre data-lang="xml">
 <strong>
-<script>
+
 <activity
     android:name=".ActivityTest"
     android:label="@string/app_name" >
@@ -198,29 +198,10 @@ VD: Đăng ký một activity cho intent ACTION_SEND, nó tự khai bảo chỉ 
     </intent-filter>
 
 </activity>
-</script>
+
 </strong>
 </pre>
 
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight">
-<code data-lang="xml">
-<span class="tag">&lt;activity</span>
-<span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">.ActivityTest</span><span class="delimiter">&quot;</span></span>
-    <span class="attribute-name">android:label</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">@string/app_name</span><span class="delimiter">&quot;</span></span> <span class="tag">&gt;</span>
-    <span class="tag">&lt;intent-filter&gt;</span>
-      <span class="tag">&lt;action</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">android.intent.action.SEND</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
-
-      <span class="tag">&lt;category</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">android.intent.category.DEFAULT</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
-
-      <span class="tag">&lt;data</span> <span class="attribute-name">android:mimeType</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">text/plain</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
-
-    <span class="tag">&lt;/intent-filter&gt;</span>
-
-<span class="tag">&lt;/activity&gt;</span></code></pre>
-</div>
-</div>
 
 
 
