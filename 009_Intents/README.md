@@ -24,4 +24,9 @@ Tạo một intent tường minh sau đó gửi nó cho hệ thống để khở
 
 - Intent không tường minh là ứng dụng sẽ hỏi hế thống đánh giá xem những thành phần nào đã đăng ký dựa trên dữ liệu của intent.
 - Intent không tường minh chỉ rõ hành động cần thực hiện và dữ liệu tùy chọn cung cấp nội dung cho hành động.
-- Nếu một intent được gửi cho hệ thống, nó sẽ tìm toàn bộ các thành phần đã đăng ký hành động cụ thể và kiểu dữ liệu thích hợp.
+- Nếu một intent được gửi cho hệ thống, nó sẽ tìm toàn bộ các thành phần đã đăng ký hành động cụ thể và kiểu dữ liệu thích hợp. Nếu chỉ một thành phần được tìm thấy nó sẽ khởi chạy luôn, nếu có nhiều thành phần được tìm thấy thì người dùng sẽ lựa chọn trên một dialog
+Tạo một intent không tường minh yêu cầu hệ thống tìm và mở một web browser
+<pre>
+<strong>Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.vogella.com"));</strong>
+<strong>startActivity(i);</strong>
+</pre>
