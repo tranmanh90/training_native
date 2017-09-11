@@ -143,6 +143,68 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 </strong>
 </pre>
 
+<h1>3. Registering for intents via intent filters</h1>
+
+- Intent được sử dụng đẻ báo hiệu cho hệ thống rằng một event đã xẩy ra.
+- Intent thường mô tả hành động cần được thực hiện và cung cấp data trên đó một hành động như vậy cần dùng.
+VD: Ứng dụng có thể khởi cạy một browser sử dụng URL thông qua một intent
+<pre>
+<strong>
+String url = "http://www.vogella.com";
+Intent i = new Intent(Intent.ACTION_VIEW);
+i.setData(Uri.parse(url));
+startActivity(i);
+</strong>
+<pre>
+- Để hệ thông xác định thành phần có thể tương tác với intent, thì mỗi thành phần đó phải đăng ký một intent filter cho một hành động cụ thể và dữ liệu cụ thể.
+- Intent filter chỉ rõ kiểu loại intent mà một activity, service, broadcast receiver có thể đắp lại bằng cách khai báo các khả năng của một thành phần.
+- Có thể đăng ký intent filter tĩnh trong file AndroidManifest.xml và động trong code của một broadcast receiver.
+- Nếu một intent được gửi tới hệ thống, hệ thống sẽ chạy một bộ xác định receiver. Nó sử dụng data trong intent, nếu có nhiều thành phần cùng đăng ký intent filter giống nhau thì người dùng sẽ chọn.
+- Nếu một thành phần mà không định nghĩa 
+
+<strong>3.1. Example: Register an activity as browser</strong>
+Vd: Đăng ký một Activity cho một intent , nó được kích hoạt khi ai đó muốn mở webpage.
+<pre>
+<strong>
+<activity android:name=".BrowserActivitiy"
+          android:label="@string/app_name">
+  <intent-filter>
+     <action android:name="android.intent.action.VIEW" />
+     <category android:name="android.intent.category.DEFAULT" />
+     <data android:scheme="http"/>
+  </intent-filter>
+</activity>
+</strong>
+</pre>
+
+<strong>3.2. Example: Register an activity for the share intent</strong>
+VD: Đăng ký một activity cho intent ACTION_SEND, nó tự khai bảo chỉ phù hợp với text/plain
+<pre>
+<strong>
+<activity
+    android:name=".ActivityTest"
+    android:label="@string/app_name" >
+    <intent-filter>
+      <action android:name="android.intent.action.SEND" />
+
+      <category android:name="android.intent.category.DEFAULT" />
+
+      <data android:mimeType="text/plain" />
+
+    </intent-filter>
+
+</activity>
+</strong>
+</pre>
+
+
+
+
+
+
+
+
+
 
 
 
