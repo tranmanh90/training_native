@@ -30,3 +30,16 @@ Tạo một intent không tường minh yêu cầu hệ thống tìm và mở m�
 <strong>Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.vogella.com"));</strong>
 <strong>startActivity(i);</strong>
 </pre>
+
+<strong>1.4. Determine valid intent receivers</strong>
+- Đôi lúc chúng ta muốn xác định xem một thành phần đã được đăng ký intent chưa.
+VD: Chúng ta muốn kiểm tra xem một intent receiver đã có chưa, nếu có rồi thì chúng ta cho phép chức năng trong ứng dụng của mình.
+<pre>
+public static boolean isIntentAvailable(Context ctx, Intent intent) {
+    final PackageManager mgr = ctx.getPackageManager();
+    List<ResolveInfo> list =
+        mgr.queryIntentActivities(intent,
+            PackageManager.MATCH_DEFAULT_ONLY);
+    return list.size() > 0;
+}
+</pre>
