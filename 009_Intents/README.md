@@ -45,3 +45,8 @@ public static boolean isIntentAvailable(Context ctx, Intent intent) {
 }
 </strong>
 </pre>
+
+<strong>1.5. Intents as event triggers</strong>
+- Intent có thể được sử dụng để quảng bá các bản tin tới hệ thống android.
+- Một broadcast receiver có thể đăng ký cho một event và được thông báo nếu event đó được gửi đi.
+- Ứng dụng của chúng ta có thể đăng ký các sự kiện của hệ thống.
