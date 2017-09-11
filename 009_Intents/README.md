@@ -17,11 +17,11 @@
 - Android hỗ trợ Intent tường minh và không tường minh.
 - Intent tường minh là một ứng dụng sẽ xác định thành phần đích muốn truyền intent tới. Intent tường minh sử dụng trong phạm vi một ứng dụng.
 Tạo một intent tường minh sau đó gửi nó cho hệ thống để khởi chạy một Activity:
+<pre>
 <strong>Intent i = new Intent(this, ActivityTwo.class);</strong>
-<br/>
 <strong>i.putExtra("Value1", "This value one for ActivityTwo ");</strong>
-<br/>
 <strong>i.putExtra("Value2", "This value two ActivityTwo");</strong>
+</pre>
 
 - Intent không tường minh là ứng dụng sẽ hỏi hế thống đánh giá xem những thành phần nào đã đăng ký dựa trên dữ liệu của intent.
 - Intent không tường minh chỉ rõ hành động cần thực hiện và dữ liệu tùy chọn cung cấp nội dung cho hành động.
